@@ -1,1 +1,1 @@
-# stegosoar-hompage
+# Homepage for Stegosoar.com

@@ -1,0 +1,36 @@
+
+.game {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.tic-tac-toe {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+.tile {
+  height: 51px;
+  width: 47px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  vertical-align: top;
+  /* padding: 15px; */
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+}
+.free {
+  background-color: inherit;
+  border: 1px solid #999;
+}
+.O-play {
+  background-color: red;
+}
+.X-play {
+  background-color: blue;
+}

@@ -1,0 +1,266 @@
+
+<html>
+<head>
+    <title>Stegosoar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="icon" href="/static/images/dance-favicon.ico" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- CSS App -->
+    <link rel="stylesheet" type="text/css" href="/static/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/tictactoe.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui.structure.css">
+
+</head>
+
+<body class="">
+  <nav class="navbar sticky-top navbar-light justify-content-center">
+    <!-- <div id="logo-cloud" class="d-inline-block align-top">
+      <img src="static/img/cloud-10.svg" width="175" height="175" id="cloud-logo" alt="">
+      <img src="static/img/stegosoar-3-logo.svg" width="100" height="100" id="stego-logo" alt="">
+    </div> -->
+    <a class="navbar-brand" href="#">
+      <!-- <object type="image/svg+xml" data="static/img/cloud-2-header.svg">
+        Your browser does not support SVGs
+      </object> -->
+      Stegosoar
+    </a>
+  </nav>
+  <div class="contact">
+    <div id="req-cont" class="icon-container p-4 box">
+      <h5 class="request">Request a Proposal</h5>
+      <div class="close-btn">
+        <button id="close-btn" type="button" class="btn btn-outline-secondary" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="popout">
+        <form class="" action="index.html" method="post">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Tell us about your development needs</label>
+            <textarea class="form-control" id="infoControlTextarea1" rows="4"></textarea>
+            <p><br />What's the best way to reach you?</p>
+            <div class="row">
+              <div class="col">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="emailControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="col">
+                <label for="exampleFormControlInput1">Phone</label>
+                <input type="email" class="form-control" id="phoneControlInput1" placeholder="(123)456-7890">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <div class="row">
+    <div style="height: 75px;">
+    </div>
+  </div>
+  <div class="row">
+    <div id="box-1" class="col-sm-8 offset-2">
+      <div class="content-box">
+        <div id="centered-child">
+          <div class="content">We build</div>
+          <div class="items">
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div style="min-height: 100px">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 offset-2 content-box">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-md-6">
+            <h2>Websites</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Custom from top to bottom</li>
+              <li class="list-group-item">Developed from scratch to suit your needs</li>
+              <li class="list-group-item">Designed to emphasize your message</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div id="editor">
+              <div id="editor-head">
+                <span>/public_http/index.html</span>
+              </div>
+              <div id="editor-body">
+                <span id="typed"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div style="min-height: 100px">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 offset-2 content-box">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-md-6">
+            <h2>Web Apps</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Full Stack Application Development</li>
+              <li class="list-group-item">Usability first design philospphy </li>
+              <li class="list-group-item">Specializing in AWS products</li>
+              <li class="list-group-item">Add third-party services to your current app</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="game">
+              <h5>Play Tic Tac Toe</h5>
+              <p class="game-message"></p>
+              <div class="tic-tac-toe">
+                <div id="square1" class="tile free"></div>
+                <div id="square2" class="tile free"></div>
+                <div id="square3" class="tile free"></div>
+                <div id="square4" class="tile free"></div>
+                <div id="square5" class="tile free"></div>
+                <div id="square6" class="tile free"></div>
+                <div id="square7" class="tile free"></div>
+                <div id="square8" class="tile free"></div>
+                <div id="square9" class="tile free"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div style="min-height: 100px">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-sm-8 offset-2 content-box">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-md-6">
+            <h2>Custom APIs</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Designed to fit your service need</li>
+              <li class="list-group-item">Use your database or data provided externally</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-center">
+              <div class="card-header">
+                Current Weather
+              </div>
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h3>
+                        <span class="weather-temp"></span>
+                        <span id="weather-deg">&#8457;</span>
+                      </h3>
+                      <p class="weather-desc"></p>
+                      <p class="weather-loc"></p>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="weather-right">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-muted">
+                <div class="input-group mb-3">
+                  <input id="weather-zip" type="text" class="form-control" placeholder="Enter Zip Code" aria-label="Zip-Code" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="get-weather">Go</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div style="min-height: 100px">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 offset-2 content-box">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-md-6">
+            <h2>Data Analytics</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Data collection, cleaning, massaging</li>
+              <li class="list-group-item">Dashboard design and development</li>
+              <li class="list-group-item">D3 and Weg Graphics Layer</li>
+              <li class="list-group-item"></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="data">
+              <h3>How will the world end?</h3>
+              <div id="d3" style="width: 300px, height: 300px">
+
+              </div>
+              <p id="data-note">*according to Hollywood movie titles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div style="min-height: 100px">
+    </div>
+  </div>
+</div>
+  <div class="panel">
+    <div id="typed-strings">
+      <pre>
+        <code id="code">
+          &lt;!DOCTYPE&gt;<br/>
+          &lt;head&gt;<br/>
+          &lt;title&gt;<br/><br/>
+          <span class="space"></span>Your Website's Name<br/><br/>
+          &lt;/title&gt;<br/>
+          &lt;/head&gt;<br/>
+          &lt;body&gt;<br/><br/>
+          <span class="space"></span>What you want the world to know!<br/><br/>
+          &lt;/body&gt;<br/>
+          &lt;/html&gt;<br/>
+        </code>
+      </pre>
+    </div>
+  </div>
+
+  <!-- Javascript Libs -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script type="text/javascript" src="/static/js/jquery-ui.js"></script>
+  <script type="text/javascript" src="/static/js/app.js"></script>
+  <script type="text/javascript" src="/static/js/tictactoe.js"></script>
+
+
+</body>
+</html>

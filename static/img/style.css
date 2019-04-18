@@ -1,0 +1,7 @@
+#cloud-1 {
+  width: 80%;
+}
+
+#cloud-1 > path {
+  stroke-width: 5;
+}
